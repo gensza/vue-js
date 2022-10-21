@@ -1,25 +1,40 @@
 <template>
-    <div>
-        <h1 class="title">Add New Product</h1>
-        <form action="" @submit.prevent="saveProduct">
-            <div class="field">
-                <label for="" class="label">Title</label>
-                <div class="control">
-                    <input type="text" v-model="title" class="input" placeholder="Title">
+    <div class="page-header">
+        <h3 class="page-title"> Add Form</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Basic tables</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Add Form</h4>
+                    <form action="" @submit.prevent="saveProduct">
+                        <div class="field">
+                            <label for="" class="label">Title</label>
+                            <div class="control">
+                                <input type="text" v-model="title" class="form-control" placeholder="Title">
+                            </div>
+                        </div>
+                        <div class="fielld">
+                            <label for="" class="label">Price</label>
+                            <div class="control">
+                                <input type="text" v-model="price" class="form-control" placeholder="Price">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="fielld">
-                <label for="" class="label">Price</label>
-                <div class="control">
-                    <input type="text" v-model="price" class="input" placeholder="Price">
-                </div>
-            </div>
-            <div class="field">
-                <div class="control">
-                    <button class="button is-primary">Save</button>
-                </div>
-            </div>
-        </form>
+        </div>
     </div>
 </template>
 
